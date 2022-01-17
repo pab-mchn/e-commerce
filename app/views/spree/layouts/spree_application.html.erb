@@ -10,11 +10,10 @@
     <%= render partial: 'spree/shared/head' %>
   </head>
   <body class="<%= body_class %>" id="<%= @body_id || 'default' %>" data-hook="body">
-    <div class="container">
+      <%= render partial: 'spree/shared/nav_bar' %>
+       <%= render partial: 'spree/shared/main_nav_bar' if store_menu? %>
       <%= render 'spree/shared/banner' %>
-
-      <%= render partial: 'spree/shared/header' %>
-
+      <div class="container">
       <div id="wrapper" class="row" data-hook>
 
         <%= taxon_breadcrumbs(@taxon) %>
