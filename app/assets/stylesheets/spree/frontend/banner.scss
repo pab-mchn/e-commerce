@@ -1,7 +1,7 @@
 .banner {
   background-size: cover;
-  background-position: center;
-  padding: 170px 0;
+  background-position:center;
+  padding: 180px 0;
 }
 .banner-container{
   margin-left: 45px;
@@ -23,13 +23,19 @@
 }
 
 .taxons-list{
-  display: inline;
-  font-size: 30px;
+  list-style: none;
+  overflow: hidden;
   text-align: center;
-  text-decoration: none;
 }
 
+.taxons-list li{
+  float:left;
+  font-size: 20px;
+  width: 30%;
+}
 .taxons-list li a{
+  display:inline;
   text-decoration: none;
-  color: green;
+  color: #999;
+  text-transform: uppercase;
 }
