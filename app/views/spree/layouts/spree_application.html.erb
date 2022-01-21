@@ -7,12 +7,13 @@
   <head data-hook="inside_head">
   <%= stylesheet_pack_tag 'application' %>
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= render partial: 'spree/shared/head' %>
+  <%= render partial: 'spree/shared/head' %>
   </head>
   <body class="<%= body_class %>" id="<%= @body_id || 'default' %>" data-hook="body">
       <%= render partial: 'spree/shared/nav_bar' %>
        <%= render partial: 'spree/shared/main_nav_bar' if store_menu? %>
       <%= render 'spree/shared/banner' %>
+
       <div class="container">
       <div id="wrapper" class="row" data-hook>
 

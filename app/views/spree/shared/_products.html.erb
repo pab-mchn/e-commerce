@@ -30,7 +30,12 @@
           <div class="product-image">
             <%= link_to(render('spree/shared/image', image: product.gallery.images.first, size: :small, itemprop: "image"), url, itemprop: 'url') %>
           </div>
+          <div class="product-card_header">
+          <h5>
           <%= link_to truncate(product.name, length: 50), url, class: 'info', itemprop: "name", title: product.name %>
+          </h5>
+          </div>
+          <div class="product-card_price">
           <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
             <% if price = product.price_for_options(current_pricing_options)&.money %>
               <span class="price selling" itemprop="price" content="<%= price.to_d %>">
@@ -39,6 +44,7 @@
             <% end %>
             <span itemprop="priceCurrency" content="<%= current_pricing_options.currency %>"></span>
           </span>
+          </div>
         <% end %>
       </li>
     <% end %>
