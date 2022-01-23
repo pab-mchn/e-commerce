@@ -31,9 +31,9 @@
             <%= link_to(render('spree/shared/image', image: product.gallery.images.first, size: :small, itemprop: "image"), url, itemprop: 'url') %>
           </div>
           <div class="product-card_header">
-          <h5>
+          <h2>
           <%= link_to truncate(product.name, length: 50), url, class: 'info', itemprop: "name", title: product.name %>
-          </h5>
+          </h2>
           </div>
           <div class="product-card_price">
           <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">

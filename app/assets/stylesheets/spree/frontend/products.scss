@@ -90,20 +90,23 @@
 .product-card_header {
     text-align: center;
     margin-top: 1.5rem;
-}
-.product-card_header {
     position: relative;
 }
-.product-card_header h5 {
+
+.product-card_header h2 {
     font-weight: 600;
     font-size: 1.4rem;
     text-transform: none;
     margin: 0 0 1rem;
 }
+.product-card_header h2 a {
+  text-decoration: none;
+  color:  #4e4d4d;
+}
 
 .product-card_price {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     font-weight: 400;
     text-align: center;
-    color: #24282F;
+    color:  #4e4d4d;
 }
